@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.3.min.css" />
+<script type="text/javascript" src = "./js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src = "./js/jquery.mobile.js"></script>
+<script type="text/javascript" src = "./js/swipe_mobile.js"></script>
+<script type="text/javascript"></script>
+<div id="page07">
+  <div data-role="page" id = "page_07" data-prev = "page_06" class="background" data-dom-cache="true" data-theme="a" data-next="page_08">
+    <div class="center text tshadow" style="color:red;font-size:3.2rem;padding:3%;width:95%">
+      PORQUE NOS INVADEN LAS PLAGAS??
+    </div>
+    <img class="abs boxshadow fade" src="./images/page07-01.png" style="border:2.5px solid;bottom:30%;left:5%;height:32%">
+    <img class="abs boxshadow fade" src="./images/page07-03.png" style="border:2.5px solid;z-index:9999;bottom:5%;left:28%;height:32%">
+    <img class="abs fade" src="./images/page07-02.png" style="bottom:30%;right:5%;height:32%">
+  </div>
+</div>
+<script type="text/javascript" src = "./js/animate.js"></script>
+<script type="text/javascript">
+	function fade(ele,index){
+    ele.animate({
+      opacity: 0.5,
+      opacity: 0.6,
+      opacity: 0.7,
+      opacity: 0.8,
+      opacity: 0.9
+      // opacity: 1,
+    },{
+      duration:  1000,
+      complete: function(argument) {
+        $(this).css("opacity", 1);
+        var $this = $(this);
+        setTimeout(function(){
+          fade($this.next(), index+1);
+        },1000);
+      }
+    });
+  }
+  fade($("img.fade").first(),0);
+</script>
