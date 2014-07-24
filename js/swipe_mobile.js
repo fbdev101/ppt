@@ -28,7 +28,6 @@ $( document ).on( "pageinit", "[data-role='page'].background", function() {
       $( document ).on( "swiperight", page, function() {
           if(regex.test(page)){
             var video = $(this).find("video")[0];
-            $(video).find("source").attr("src", phone_url);
             video.pause();
             video.currentTime = 0;
           }
