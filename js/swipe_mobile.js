@@ -1,22 +1,3 @@
-// download video
-var phone_url = "";
-var fileTransfer = new FileTransfer();
-var uri = encodeURI("http://www.w3schools.com/html/movie.mp4");
-
-fileTransfer.download(
-    uri,
-    filePath,
-    function(entry) {
-      phone_url =  entry.fullPath
-    },
-    function(error) {
-      console.log("download error source " + error.source);
-      console.log("download error target " + error.target);
-      console.log("upload error code" + error.code);
-    }
-);
-
-
 
 var time_delay =  1500;
 $( document ).on( "pageinit", "[data-role='page'].background", function() {
