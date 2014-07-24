@@ -57,6 +57,7 @@
     <gap:plugin name="com.adobe.plugins.gaplugin" />
     -->
     <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.core.FileTransfer" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon128.png" />
