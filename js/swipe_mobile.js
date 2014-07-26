@@ -1,5 +1,5 @@
 
-var time_delay =  1500;
+var time_delay =  1000;
 $( document ).on( "pageinit", "[data-role='page'].background", function() {
   var page = "#" + $( this ).attr( "id" ),
       next = $( this ).jqmData( "next" ),
@@ -168,11 +168,11 @@ function lac(el){
   el.css("transform", "rotate(10deg)");
   setTimeout(function() {
     el.css("transform", "rotate(0deg)");
-  },200);
+  },150);
   setTimeout(function() {
     el.css("transform", "rotate(-10deg)");
-  },400);
+  },300);
   setTimeout(function() {
     el.css("transform", "rotate(0deg)");
-  },600);
+  },400);
 }
