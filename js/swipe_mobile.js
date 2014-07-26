@@ -1,3 +1,4 @@
+
 var time_delay =  1500;
 $( document ).on( "pageinit", "[data-role='page'].background", function() {
   var page = "#" + $( this ).attr( "id" ),
@@ -162,4 +163,16 @@ function animation(ele,index){
       },time_delay);
     }
   });
+}
+function lac(el){
+  el.css("transform", "rotate(10deg)");
+  setTimeout(function() {
+    el.css("transform", "rotate(0deg)");
+  },200);
+  setTimeout(function() {
+    el.css("transform", "rotate(-10deg)");
+  },400);
+  setTimeout(function() {
+    el.css("transform", "rotate(0deg)");
+  },600);
 }
