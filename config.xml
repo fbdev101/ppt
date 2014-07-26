@@ -55,9 +55,8 @@
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     <gap:plugin name="com.phonegap.plugins.childbrowser" />
     <gap:plugin name="com.adobe.plugins.gaplugin" />
-    <gap:plugin name="org.apache.cordova.core.FileTransfer" />
-    -->
     <gap:plugin name="org.apache.cordova.inappbrowser" />
+    -->
 
     <!-- Define app icon for each platform. -->
     <icon src="icon128.png" />
